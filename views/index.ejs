@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+  </head>
+  <body>
+    <center><h1>Hello guys</h1></center>
+    <center>
+      <ul>
+        <li><a href="/about">about page</a></li>
+      </ul>
+      <h1>data orang</h1>
+      <% if (data.length <1 ) { %> data kosong <% } else { %> <% data.forEach(org => { %>
+      <ul>
+        <li>nama : <%= org.nama %></li>
+        <li>id : <%= org.id %></li>
+      </ul>
+      <% }) %> <% } %>
+    </center>
+  </body>
+</html>
